@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
+import { MymaterialModule } from "../mymaterial/mymaterial.module";
+import { DemoRoutingModule } from "./demo-routing.module";
+
+import { FlexboxComponent } from './flexbox/flexbox.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    DemoRoutingModule,
+    MymaterialModule,
+    FormsModule,
+    FlexLayoutModule
+  ],
+  declarations: [ButtonsComponent, FlexboxComponent]
+})
+export class DemoModule { }
