@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MymaterialModule } from '../mymaterial/mymaterial.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { UserService } from './services/user.service';
 
 @NgModule({
   imports: [
@@ -24,6 +25,9 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     ToolbarComponent,
     MainContentComponent,
     SidenavComponent
+  ],
+  providers: [
+    UserService
   ]
 })
 export class ContactmanagerModule { }
