@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MymaterialModule } from '../mymaterial/mymaterial.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { UserService } from './services/user.service';
     MymaterialModule,
     FlexLayoutModule,
     FormsModule,
-    ContactmanagerRoutingModule
+    ContactmanagerRoutingModule,
+    HttpClientModule
   ],
   declarations: [
     ContactManagerAppComponent,
