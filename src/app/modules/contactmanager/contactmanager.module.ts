@@ -12,6 +12,7 @@ import { MymaterialModule } from '../mymaterial/mymaterial.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { UserService } from './services/user.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NotesComponent } from './components/notes/notes.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactManagerAppComponent,
     ToolbarComponent,
     MainContentComponent,
-    SidenavComponent
+    SidenavComponent,
+    NotesComponent
   ],
   providers: [
     UserService
